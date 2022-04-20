@@ -1,0 +1,450 @@
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --logo-font: 'Raleway', sans-serif;
+    --main-text-color: #212121;
+    --secondary-text-color: #757575;
+    --primary-white-color: #ffffff;
+    --contact-color: rgba(255, 255, 255, 0.6);
+    --accent-color: #2196F3;
+    --dark-color: #2F303A;
+    --gray--color: #F5F4FA;
+    --focus-color: #188CE8;
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary-white-color);
+    font-family: var(--main-font);
+}
+.container {
+    max-width: 1170px;
+   /* background-color:#2196F3;*/
+    margin-left: auto;
+    margin-right: auto;
+}   
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.studio {
+    color: var(--main-text-color);
+}
+
+/* Скрываем элемент со страницы */
+.none {
+    display: none;
+}
+
+
+
+
+/* Commons */
+.button {
+    color: var(--main-text-color);
+    background-color: var(--primary-white-color);
+}
+
+.main-button {
+
+    display: inline-block;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.main-button:hover,
+.main-button:focus {
+    background-color: var(--focus-color);
+    color: var(--primary-white-color);
+}
+
+.button .secondary {
+    color: var(--main-text-color);
+    background-color: var(--gray--color);
+
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+.button .secondary:hover,
+.button .secondary:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    
+}
+
+.logo-link {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.button.list {
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+/*  Header */
+
+
+.header-box {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+ 
+.logo-box {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    }
+
+.contacts-box {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+    .menu.list {
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: space-between;
+    
+    width: 294px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
+}
+
+.menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+}
+
+.menu-link.current {
+    color: var(--accent-color);
+}
+.contacts.list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: var(--accent-color);
+}
+
+/*  Hero */
+.hero {
+    margin: 0;
+   
+    background-color: var(--dark-color);
+    background-image: url(./../images/note.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* Определяем модель flex-box для блока .header*/
+    display: flex;
+    /* Выстраиваим flex - элементы в коллонку, основная ось - Y*/
+    flex-direction: column;
+    /*Выравнивание по основной оси */
+    justify-content: center;
+    /*Выравнивание по поперечной оси */
+    align-items: center;
+}
+
+.main-title {
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    /*text-align: center;*/
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+
+}
+
+
+/* Приемущества*/
+.features {
+    
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.features-title {
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+.description {
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--secondary-text-color);
+}
+.feature {
+    text-align: center;
+    max-height: 101x;
+    max-width: 270px;
+    background-color: var(--primary-white-color);
+}
+.features-list{
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Примеры работ*/
+
+.work-list {
+    margin: 0;
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-title {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.workshop {
+
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+    padding-bottom: 94px;
+}
+
+/* Комаеда */
+.team {
+    background-color: var(--gray--color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.team-title {
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.card .title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.team-list {
+    padding-inline-start: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-card {
+    margin: 0;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+.team-list .card {
+    text-align: center;
+    max-height: 368px;
+    max-width: 270px;
+    background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card-img {
+    margin-bottom: 30px;
+}
+
+/* Портфолио*/
+
+.types.projects
+{
+    /*background-color: #757575;*/
+}
+.project .card {
+    margin: 15px;
+    text-align: left;
+    max-height: 404px;
+    max-width: 370px;
+    background-color: var(--primary-white-color);
+    border: 1px solid #EEEEEE;
+    
+}
+.project .card-img {
+    margin-bottom: 20px;
+}
+.project .title {
+    margin-bottom: 4px;
+    padding-left: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.card .team-card {
+    margin-bottom: 20px;
+    padding-left: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+.project {
+    padding-inline-start: 0;
+    display: flex; /* Ориентация карточек в ряд*/
+    flex-wrap: wrap;/* Преренос карточек*/
+    justify-content: space-between; /*Ориентация карточек по основной оси*/
+}
+
+.project .card:nth-child(1),
+.project .card:nth-child(4),
+.project .card:nth-child(7) {
+    margin-left: 0;
+}
+.project .card:nth-child(3),
+.project .card:nth-child(6),
+.project .card:nth-child(9) {
+    margin-right: 0;
+}
+
+/* Футер */
+
+footer {
+    background-color:  var(--dark-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.logo-studio {
+    color: var(--primary-white-color);
+}
+.contact-info-list.list{
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info-list-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+}
+
+.contact-info-list-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--contact-color);
+}
+
+.contact-info-list-link:hover,
+.contact-info-list-link:focus,
+.contact-info-list-item:hover,
+.contact-info-list-item:focus {
+    color: var(--accent-color);
+}
